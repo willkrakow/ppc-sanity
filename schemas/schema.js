@@ -5,19 +5,18 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
-
+import author from './author'
 import blockContent from './blockContent'
-import page from './page'
-import post from './post'
-import category from './category'
 import callToAction from './callToAction'
+import category from './category'
 import gridItem from './gridItem'
 import hero from './hero'
-import menuItem from './menuItem'
 import imageGrid from './imageGrid'
+import menuItem from './menuItem'
+import page from './page'
+import post from './post'
 import split from './split'
 import settings from './settings'
-import author from './author'
 import youtube from './youtube'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,18 +27,18 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    author,
     blockContent,
-    page,
-    post,
-    category,
     callToAction,
+    category,
     gridItem,
     hero,
-    menuItem,
     imageGrid,
+    menuItem,
+    page,
+    post,
     split,
     settings,
-    author,
     youtube,
   ]),
 })
