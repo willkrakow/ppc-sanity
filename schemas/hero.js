@@ -24,7 +24,7 @@ export default {
                     { title: "Black", value: "black" },
                     { title: "Gray", value: "gray" },
                     { title: "Blue", value: "blue" },
-                    { title: "Green", value: "green"},
+                    { title: "Green", value: "green" },
                 ]
             },
         }
@@ -36,11 +36,11 @@ export default {
         },
         prepare(selection) {
             const { subtitle, media } = selection;
-            
+
             return {
                 title: "Hero",
                 subtitle,
-                media: media,
+                media,
             };
         }
     }
