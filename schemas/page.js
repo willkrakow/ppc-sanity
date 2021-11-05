@@ -64,6 +64,7 @@ export default {
                 {type: "split"},
                 {type: "youtube"},
                 {type: "block"},
+                {type: "form"},
             ],
         },
     ],

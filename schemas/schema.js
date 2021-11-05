@@ -20,6 +20,7 @@ import split from './split'
 import settings from './settings'
 import author from './author'
 import youtube from './youtube'
+import form from './form'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -43,5 +44,6 @@ export default createSchema({
     settings,
     author,
     youtube,
+    form
   ]),
 })
